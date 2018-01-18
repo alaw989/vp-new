@@ -15,6 +15,7 @@
 
     <!-- Slick carousel -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/app/css/slick.css">
+  
     <?php wp_head(); ?>
 </head>
 

@@ -65,6 +65,12 @@
 </section>
 
 <section>
-    <div id="map"></div>
+    <div class="contact">   
+        <div class="contact__form">
+        </div>
+        <div id="contact__map"></div>
+    </div>
+
+
 </section>
 <?php get_footer(); ?>
