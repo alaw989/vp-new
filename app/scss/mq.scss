@@ -1,0 +1,36 @@
+/*mixins*/
+$small-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$ultra-width: 1200px;
+$super-width: 1600px;
+
+@mixin mobile {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin ultra {
+  @media (min-width: #{$ultra-width}) {
+    @content;
+  }
+}
+
+@mixin super {
+  @media (min-width: #{$super-width}) {
+    @content;
+  }
+}

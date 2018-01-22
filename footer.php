@@ -1,16 +1,18 @@
-<footer class="blog-footer">
-  <?php /*  <?php if (is_front_page()): ?>
-  <div class="form-footer">
-    <div class="form-footer__header">
-      <h2>Contact Us</h2>
 
-      <?php endif;?>
-    </div>
-    */ ?>
+
+
+
+<?php
+ if (is_page('43')) {
+     echo '<footer class=blog-footer2>';
+ } elseif (is_page('46')) {
+     echo '<footer class=blog-footer>';
+ }
+?>
     <div class="container">
       <img src="/vp/wp-content/uploads/2017/12/vplogowhite.png" />
       <p>&copy;
-        <?php echo date('Y'); ?> -
+        <?php echo date('Y'); ?> 
         <?php bloginfo('name'); ?>
       </p>
     </div>
