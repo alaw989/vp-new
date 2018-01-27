@@ -59,12 +59,8 @@
   .career__body--right {
   @include desktop {
     width: 40%;
-    padding: 50px 50px 0 50px;
   }
     width: 100%;
-    padding: 0 0 0 20px;
-   
-  
     p {
       color: $color-text-dark;
       font-size: 16px;

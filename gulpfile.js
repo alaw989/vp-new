@@ -24,9 +24,9 @@ gulp.task('js', function () {
 gulp.task('sass', function () {
 	gulp.src('./app/scss/**/*.scss')
 	.pipe(plumber())
-	.pipe(sass().on('error', sass.logError))
-	.pipe(sass( {outputStyle: 'compressed'} ))
+	.pipe(sass().on('error', sass.logError)) 
 	.pipe(autoprefixer('last 2 versions'))
+	.pipe(sass())
 	.pipe(gulp.dest('./app/css'))
 	.pipe(browserSync.stream())
 });

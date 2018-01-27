@@ -21,7 +21,7 @@
                         </br> Send Your resume to <a href="mailto:vphan@vp-associates.com">vphan@vp-associates.com</a></p>
                 </div>
                 <div class="career__body--right">
-                    
+                <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x350"></a>
                 </div>
             </div>
         </div>

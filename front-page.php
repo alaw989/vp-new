@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="button">LEARN MORE</a>
+        <a href="<?php echo get_page_link(17); ?>" class="button">LEARN MORE</a>
     </div>
 </section>
 
