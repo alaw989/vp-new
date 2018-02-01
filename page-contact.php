@@ -11,7 +11,7 @@
                     </h3>
                     <div id="container" class="ltr">
                         <form id="form1" name="form1" class="wufoo rightLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data"
-                            method="post" novalidate action="https://vphan.wufoo.com/forms/zn0znsn0uaxox1/#public">
+                            method="post" novalidate action="https://vphan.wufoo.com/forms/zn0znsn0uaxox1/public">
                             <ul>
                                 <li id="foli1" class="      ">
                                     <label class="desc notranslate" id="title1" for="Field1">
@@ -82,21 +82,21 @@
                                         <input id="Field7" name="Field7" type="tel" class="field text" value="" size="3" maxlength="3" tabindex="7" onkeyup="autotab(this, document.getElementById('Field7-1'), this); filterNonnumeric(this);"
                                             onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
                                         />
-                                        <label for="Field7">###</label>
+                                        <label for="Field7"></label>
                                     </span>
                                     <span class="symbol">-</span>
                                     <span>
                                         <input id="Field7-1" name="Field7-1" type="tel" class="field text" value="" size="3" maxlength="3" tabindex="8" onkeyup="autotab(this, document.getElementById('Field7-2'), document.getElementById('Field7')); filterNonnumeric(this);"
                                             onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
                                         />
-                                        <label for="Field7-1">###</label>
+                                        <label for="Field7-1"></label>
                                     </span>
                                     <span class="symbol">-</span>
                                     <span>
                                         <input id="Field7-2" name="Field7-2" type="tel" class="field text" value="" size="4" maxlength="4" tabindex="9" onkeyup="autotab(this, this, document.getElementById('Field7-1')); filterNonnumeric(this);"
                                             onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
                                         />
-                                        <label for="Field7-2">####</label>
+                                        <label for="Field7-2"></label>
                                     </span>
                                 </li>
                                 <li id="foli8" class="phone notranslate      ">
@@ -107,21 +107,21 @@
                                         <input id="Field8" name="Field8" type="tel" class="field text" value="" size="3" maxlength="3" tabindex="10" onkeyup="autotab(this, document.getElementById('Field8-1'), this); filterNonnumeric(this);"
                                             onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
                                         />
-                                        <label for="Field8">###</label>
+                                        <label for="Field8"></label>
                                     </span>
                                     <span class="symbol">-</span>
                                     <span>
                                         <input id="Field8-1" name="Field8-1" type="tel" class="field text" value="" size="3" maxlength="3" tabindex="11" onkeyup="autotab(this, document.getElementById('Field8-2'), document.getElementById('Field8')); filterNonnumeric(this);"
                                             onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
                                         />
-                                        <label for="Field8-1">###</label>
+                                        <label for="Field8-1"></label>
                                     </span>
                                     <span class="symbol">-</span>
                                     <span>
                                         <input id="Field8-2" name="Field8-2" type="tel" class="field text" value="" size="4" maxlength="4" tabindex="12" onkeyup="autotab(this, this, document.getElementById('Field8-1')); filterNonnumeric(this);"
                                             onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder=""
                                         />
-                                        <label for="Field8-2">####</label>
+                                        <label for="Field8-2"></label>
                                     </span>
                                 </li>
                                 <li id="foli9" class="      ">

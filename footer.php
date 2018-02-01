@@ -4,42 +4,60 @@ if (is_front_page()) {
 } elseif (is_page('46')) {
     echo '<footer class=blog-footer>';
 } elseif (is_page('43')) {
-    echo '<footer class="blog-footer2">';
+    echo '<footer class="blog-footer">';
 } elseif (is_page('17')) {
-    echo '<footer class="blog-footer2">';
+    echo '<footer class="blog-footer">';
 }
 ?>
   <div class="container">
-    <img src="/vp/wp-content/uploads/2017/12/vplogowhite.png" />
-    <p>&copy;
-      <?php echo date('Y'); ?>
-      <?php bloginfo('name'); ?>
-    </p>
-  </div>
+    <div class="blog__footer--copyright">
+      <img src="/vp/wp-content/uploads/2017/12/vplogowhite.png" />
+      <p>&copy;
+        <?php echo date('Y'); ?>
+        <?php bloginfo('name'); ?>
+      </p>
+    </div>
+    <div class="nav-container">
+      <nav class="nav" id="bs-example-navbar-collapse-1">
+        <?php
+wp_nav_menu(array(
+    'menu' => 'primary',
+    'theme_location' => 'primary',
+    'depth' => 2,
+    'container' => 'div',
+    'container_class' => 'nav',
+    'container_id' => 'bs-example-navbar-collapse-1',
+    'menu_class' => 'nav navbar-nav',
+    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+    'walker' => new wp_bootstrap_navwalker(), )
+);
+?>
+      </nav>
+    </div>
 
-  </footer>
-  <?php wp_footer(); ?>
-  <!-- jQuery library -->
-  <script src="<?php echo get_template_directory_uri(); ?>/app/js/jquery-3.2.1.min.js"></script>
+    </footer>
+    <?php wp_footer(); ?>
+    <!-- jQuery library -->
+    <script src="<?php echo get_template_directory_uri(); ?>/app/js/jquery-3.2.1.min.js"></script>
 
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh40YW-P9vuPHcF2UGZbcn60QjmoW9-Q4&callback=initMap" async
-    defer></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh40YW-P9vuPHcF2UGZbcn60QjmoW9-Q4&callback=initMap" async
+      defer></script>
 
-  <!-- Slick Carousel -->
-  <script src="<?php echo get_template_directory_uri(); ?>/app/js/slick.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="<?php echo get_template_directory_uri(); ?>/app/js/slick.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.subtitle-container').slick({
-        autoplay: true,
-        fade: true,
-        arrows: false,
-        speed: 700
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.subtitle-container').slick({
+          autoplay: true,
+          fade: true,
+          arrows: false,
+          speed: 700
+        });
       });
-    });
-  </script>
+    </script>
 
-  </body>
+    </body>
 
-  </html>
+    </html>

@@ -28,13 +28,21 @@
 <section>
     <div class="about-wrap">
         <div class="container">
-            <div class="about-header">
-                <h2 class="about-section__header">
-                    <span>ABOUT US</span>
+            <div class="about-header section-header">
+                <h2>
+                    <span>ABOUT</span> US
                 </h2>
             </div>
-            <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box4')) : ?>
-            <?php endif; ?>
+            <div class="about__content">
+                <div class="about__content--image">
+                    <img src="http://via.placeholder.com/450x450">
+                    </a>
+                </div>
+                <div class="about__content--text">
+                    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box4')) : ?>
+                    <?php endif; ?>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -42,7 +50,7 @@
 <section>
     <div class="services-wrap">
         <div class="container">
-            <div class="services-header">
+            <div class="services-header section-header">
                 <h2>
                     <span>QUALITY </span>SERVICES
                 </h2>
@@ -64,13 +72,26 @@
     </div>
 </section>
 
-<section>
-    <div class="contact">   
-        <div class="contact__form">
+<section class="imagerow">
+    <div class="container">
+        <div class="imagerow__header section-header">
+            <h2>OUR
+                <span>CLIENTS</span>
+            </h2>
         </div>
-        <div id="contact__map"></div>
+        <div class="imagerow__images">
+            <img src="http://via.placeholder.com/150x150">
+            <img src="http://via.placeholder.com/150x150">
+            <img src="http://via.placeholder.com/150x150">
+            <img src="http://via.placeholder.com/150x150">
+            <img src="http://via.placeholder.com/150x150">
+        </div>
     </div>
+</section>
 
 
+
+<section>
+    <div id="contact__map"></div>
 </section>
 <?php get_footer(); ?>

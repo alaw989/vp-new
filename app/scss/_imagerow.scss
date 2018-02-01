@@ -1,0 +1,22 @@
+.imagerow {
+    background-color: #FFF;
+    background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+    padding: 80px 0;
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.imagerow__images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    img {
+        padding: 10px;
+    }
+}
+

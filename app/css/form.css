@@ -468,10 +468,7 @@
   input.text,
   input.search,
   textarea.textarea {
-    border-top: 1px solid #7c7c7c;
-    border-left: 1px solid #c3c3c3;
-    border-right: 1px solid #c3c3c3;
-    border-bottom: 1px solid #ddd;
+   padding: 5px 0;
   }
   input.nospin::-webkit-inner-spin-button,
   input.nospin::-webkit-outer-spin-button {
@@ -770,7 +767,6 @@
   .leftLabel .desc,
   .rightLabel .desc {
     /*float: left;*/
-    width: 31%;
     margin: 0 15px 0 0;
   }
   .rightLabel .desc {

@@ -14,8 +14,8 @@
 
 
     <!-- Slick carousel -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/app/css/slick.css">
-  
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/app/css/slick.css">
+
     <?php wp_head(); ?>
 </head>
 
@@ -63,18 +63,18 @@
                 <div class="nav-container">
                     <nav class="nav" id="bs-example-navbar-collapse-1">
                         <?php
-            wp_nav_menu(array(
-             'menu' => 'primary',
-             'theme_location' => 'primary',
-             'depth' => 2,
-             'container' => 'div',
-             'container_class' => 'nav',
-             'container_id' => 'bs-example-navbar-collapse-1',
-             'menu_class' => 'nav navbar-nav',
-             'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-             'walker' => new wp_bootstrap_navwalker(), )
-             );
-            ?>
+wp_nav_menu(array(
+    'menu' => 'primary',
+    'theme_location' => 'primary',
+    'depth' => 2,
+    'container' => 'div',
+    'container_class' => 'nav',
+    'container_id' => 'bs-example-navbar-collapse-1',
+    'menu_class' => 'nav navbar-nav',
+    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+    'walker' => new wp_bootstrap_navwalker(), )
+);
+?>
                     </nav>
                 </div>
             </div>
