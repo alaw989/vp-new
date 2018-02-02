@@ -20,7 +20,7 @@
                     </p>
                 </div>
                 <div class="career__body--right">
-                <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x350"></a>
+                <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x850"></a>
                 </div>
             </div>
         </div>

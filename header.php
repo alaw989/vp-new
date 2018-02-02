@@ -47,9 +47,13 @@
                     <div class="box-right">
                         <div class="call-us-container">
                             <i class="fa fa-phone" aria-hidden="true"></i>
-                            <p>Call Us</p>
+                            <a href="tel:+8132473835">
+                                <p>Call Us</p>
+                            </a>
                         </div>
-                        <h2>813.247.3835</h2>
+                        <a href="tel:+8132473835">
+                            <h2>813.247.3835</h2>
+                        </a>
                     </div>
                 </div>
             </div>

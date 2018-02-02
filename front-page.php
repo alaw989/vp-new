@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
+<?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
+<?php $image_attributes = wp_get_attachment_image_src($attachment_id = 55, $size = 'medium'); ?>
+
+
+
 <div class="blog-header">
-    <div class="banner-container" style="background-image: url('<?php echo header_image(); ?>'); ">
+    <div class="banner-container" style="background-image: url('<?php echo $thumb['0']; ?>'); background-repeat: no-repeat; background-size: cover; ">
         <div class="title-container">
             <?php //masthead title widget
     if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box3')): ?>
@@ -9,13 +14,13 @@
 
             <div class="subtitle-container">
                 <h3>
-                    <span>STRUCTURAL ENGINEERING AND STEEL DETAILING</span>
+                    <span>STRUCTURAL ENGINEERING <br>AND <br>STEEL DETAILING</span>
                 </h3>
                 <h3>
-                    <span>BUILDING AND INFORMATION MODEL (BIM)</span>
+                    <span>BUILDING AND <br>INFORMATION MODEL (BIM)</span>
                 </h3>
                 <h3>
-                    <span>EMPLOYING THE LATEST CAD SOFTWARE</span>
+                    <span>EMPLOYING THE LATEST <br>CAD SOFTWARE</span>
                 </h3>
                 <h3>
                     <span>QUICK RESPONSE</span>
@@ -35,8 +40,7 @@
             </div>
             <div class="about__content">
                 <div class="about__content--image">
-                    <img src="http://via.placeholder.com/450x450">
-                    </a>
+                <img src= "<?php echo $image_attributes[0]; ?>">
                 </div>
                 <div class="about__content--text">
                     <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box4')) : ?>
@@ -54,9 +58,9 @@
                 <h2>
                     <span>QUALITY </span>SERVICES
                 </h2>
-                <p>Our firm's strongest in-house areas of specialization are as follows</p>
+                <?php /*<p>Our firm's strongest in-house areas of specialization are as follows</p> */ ?>
             </div>
-            <div class="services-wrapper">
+            <div class="services__content">
                 <div class="services-container">
                     <?php //Home Page Widget Start
     if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box1')): ?>
@@ -79,7 +83,7 @@
                 <span>CLIENTS</span>
             </h2>
         </div>
-        <div class="imagerow__images">
+        <div class="imagerow__content">
             <img src="http://via.placeholder.com/150x150">
             <img src="http://via.placeholder.com/150x150">
             <img src="http://via.placeholder.com/150x150">
