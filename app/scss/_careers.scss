@@ -57,6 +57,7 @@
   }
   
   .career__body--right {
+    overflow: hidden;
   @include desktop {
     width: 40%;
   }

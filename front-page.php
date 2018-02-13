@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
-<?php $image_attributes = wp_get_attachment_image_src($attachment_id = 55, $size = 'medium'); ?>
+<?php $image_attributes = wp_get_attachment_image_src($attachment_id = 55, $size = 'content_thumb'); ?>
 
 
 
@@ -14,13 +14,17 @@
 
             <div class="subtitle-container">
                 <h3>
-                    <span>STRUCTURAL ENGINEERING <br>AND <br>STEEL DETAILING</span>
+                    <span>STRUCTURAL ENGINEERING
+                        <br>AND
+                        <br>STEEL DETAILING</span>
                 </h3>
                 <h3>
-                    <span>BUILDING AND <br>INFORMATION MODEL (BIM)</span>
+                    <span>BUILDING AND
+                        <br>INFORMATION MODEL (BIM)</span>
                 </h3>
                 <h3>
-                    <span>EMPLOYING THE LATEST <br>CAD SOFTWARE</span>
+                    <span>EMPLOYING THE LATEST
+                        <br>CAD SOFTWARE</span>
                 </h3>
                 <h3>
                     <span>QUICK RESPONSE</span>
@@ -40,7 +44,7 @@
             </div>
             <div class="about__content">
                 <div class="about__content--image">
-                <img src= "<?php echo $image_attributes[0]; ?>">
+                    <img src="<?php echo $image_attributes[0]; ?>">
                 </div>
                 <div class="about__content--text">
                     <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box4')) : ?>

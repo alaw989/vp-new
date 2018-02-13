@@ -97,3 +97,13 @@
     add_theme_support('custom-background');
     add_theme_support('custom-header');
     add_theme_support('post-thumbnails');
+
+    // Custom Image Sizes
+
+    add_action('after_setup_theme', 'vp_theme_setup');
+
+function vp_theme_setup()
+{
+    add_image_size('content_thumb', 450, 450);
+    add_image_size('services_page_image_size', 561);
+}
