@@ -7,7 +7,11 @@
 .services__banner {
     position: relative;
     padding: 200px 0;
-    background: url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgb(245, 160, 4)
+    ),
+    url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat
       scroll center center #28281c !important;
     h1 {
       color: white;
@@ -15,9 +19,13 @@
   }
   
   .services__body--heading {
-    color: $color-text-dark;
-    padding: 40px 0 0 40px;
-    font-weight: 100 !important;
+    padding: 40px 0 30px 40px;
+    background-color: $color-text-dark;
+    margin: 0;
+    h3 {
+      color: #FFF;
+      font-weight: 100 !important;
+    }
   }
   
   .services__body {

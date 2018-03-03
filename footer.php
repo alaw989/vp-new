@@ -6,6 +6,8 @@ if (is_front_page()) {
 } elseif (is_page('43')) {
     echo '<footer class="blog-footer">';
 } elseif (is_page('17')) {
+    echo '<footer class="blog-footer4">';
+} elseif (is_page('19')) {
     echo '<footer class="blog-footer">';
 }
 ?>

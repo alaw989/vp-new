@@ -97,6 +97,38 @@
   }
 }
 
+.blog-footer4 {
+  background-color: #4a4748;
+  padding: 25px 0;
+  margin-top: 1700px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .blog__footer--copyright {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 30%;
+      }
+    }
+    .nav {
+      flex-wrap: wrap;
+      li {
+        padding: 10px 10px;
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
 .form-footer {
   background-color: #fff;
   width: 35%;

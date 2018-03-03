@@ -1,0 +1,124 @@
+@import 'variables';
+@import 'mq';
+/* portfolio Section */
+
+.portfolio__banner {
+    position: relative;
+    padding: 200px 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgb(245, 160, 4)), url("/vp/wp-content/uploads/2018/01/portfolio_header.png") no-repeat scroll center center #28281c !important;
+    h1 {
+        color: white;
+    }
+}
+
+.portfolio__body--heading {
+    padding: 40px 0 30px 40px;
+    background: $color-text-dark;
+    margin: 0;
+    h3 {
+        color: #FFF;
+        font-weight: 100;
+    }
+}
+
+.portfolio__body {
+    @include tablet {
+        width: 80%;
+    }
+    @include super {
+        width: 60%;
+    }
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 100px -20px $color-text-dark;
+    width: 100%;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.portfolio__body--left {
+    @include desktop {
+        width: 60%;
+        padding: 50px 50px 0 50px;
+    }
+    padding: 0;
+    background-color: #fff;
+    h3 {
+        color: $color-text-dark;
+        font-weight: 100;
+    }
+    p {
+        color: $color-text-dark;
+    }
+}
+
+.portfolio__body--right {
+    overflow: hidden;
+    @include desktop {
+        width: 40%;
+    }
+    width: 100%;
+    p {
+        color: $color-text-dark;
+        font-size: 16px;
+    }
+    h3 {
+        color: $color-text-dark;
+        font-weight: 100;
+    }
+    a {
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+.portfolio__container {
+    .fa {
+        font-size: 50px;
+        margin: 0 auto;
+        color: $color-accent;
+    }
+}
+
+.portfolio__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.portfolio__icon {
+    display: flex;
+    align-items: center;
+    width: 80px;
+}
+
+.portfolio__body--content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 30px 40px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+#portfolio__map {
+    height: 80vh;
+    width: 50%;
+}
+
+.portfolio__form {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.portfolio__links {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        padding: 0 10px;
+    }
+}

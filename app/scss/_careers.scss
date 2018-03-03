@@ -1,115 +1,111 @@
 @import 'variables';
 @import 'mq';
-
 /* career Section */
 
-
 .career__banner {
-    position: relative;
-    padding: 200px 0;
-    background: url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat
-      scroll center center #28281c !important;
-    h1 {
-      color: white;
-    }
+  position: relative;
+  padding: 200px 0;
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgb(245, 160, 4)), url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important;
+  h1 {
+    color: white;
   }
-  
-  .career__body--heading {
-    padding: 40px 0 0 40px;
+}
+
+.career__body--heading {
+  padding: 40px 0 30px 40px;
+  background: $color-text-dark;
+  margin: 0;
+  h3 {
+    color: #FFF;
+    font-weight: 100;
   }
-  
-  .career__body {
-    @include tablet {
-      flex-direction: row;
-      width: 80%;
-    }
-    @include super {
-      width: 60%;
-    }
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 0px 100px -20px $color-text-dark;
-    width: 100%;
-    top: 300px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+}
+
+.career__body {
+  @include tablet {
+    width: 80%;
   }
-  
-  .career__body--left {
-    @include desktop {
-      width: 60%;
-      padding: 50px 50px 0 50px;
-    }
-    padding: 0;
-    background-color: #fff;
-    h3 {
-      color: $color-text-dark;
-      font-weight: 100;
-    }
-    p {
-        color: $color-text-dark;
-        font-size: 16px;
-        padding: 40px;
-    }
+  @include super {
+    width: 60%;
   }
-  
-  .career__body--right {
-    overflow: hidden;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 0px 100px -20px $color-text-dark;
+  width: 100%;
+  top: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.career__body--left {
+  @include desktop {
+    width: 60%;
+    padding: 50px 50px 0 50px;
+  }
+  padding: 0;
+  background-color: #fff;
+  h3 {
+    color: $color-text-dark;
+    font-weight: 100;
+  }
+  p {
+    color: $color-text-dark;
+  }
+}
+
+.career__body--right {
+  overflow: hidden;
   @include desktop {
     width: 40%;
   }
-    width: 100%;
-    p {
-      color: $color-text-dark;
-      font-size: 16px;
-    }
-    h3 {
-      color: $color-text-dark;
-      font-weight: 100;
-    }
-    a { 
-      font-family: "Roboto", sans-serif;
-    }
+  width: 100%;
+  p {
+    color: $color-text-dark;
+    font-size: 16px;
   }
-  
-  .career__container {
-    .fa {
-      font-size: 50px;
-      margin: 0 auto;
-      color: $color-accent;
-    }
+  h3 {
+    color: $color-text-dark;
+    font-weight: 100;
   }
-  
-  .career__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0;
-  }
-  
-  .career__icon {
-    display: flex;
-    align-items: center;
-    width: 80px;
-  }
-  
-  .career__body--content {
-    display: flex;
-    align-items: center;
-    margin: 0;
+  a {
     font-family: "Roboto", sans-serif;
   }
-  
-  #career__map {
-    height: 80vh;
-    width: 50%;
+}
+
+.career__container {
+  .fa {
+    font-size: 50px;
+    margin: 0 auto;
+    color: $color-accent;
   }
-  
-  .career__form {
-    width: 50%;
-    padding: 0 50px;
-  }
-  
-  
+}
+
+.career__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+}
+
+.career__icon {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+
+.career__body--content {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#career__map {
+  height: 80vh;
+  width: 50%;
+}
+
+.career__form {
+  width: 50%;
+  padding: 0 50px;
+}

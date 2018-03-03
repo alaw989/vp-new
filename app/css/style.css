@@ -458,22 +458,22 @@ li {
 .career__banner {
   position: relative;
   padding: 200px 0;
-  background: url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(#f5a004)), url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), #f5a004), url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important; }
 
 .career__banner h1 {
   color: white; }
 
 .career__body--heading {
-  padding: 40px 0 0 40px; }
+  padding: 40px 0 30px 40px;
+  background: #4a4747;
+  margin: 0; }
+
+.career__body--heading h3 {
+  color: #FFF;
+  font-weight: 100; }
 
 .career__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: absolute;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 100px -20px #4a4747;
@@ -486,10 +486,6 @@ li {
 
 @media (min-width: 768px) {
   .career__body {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     width: 80%; } }
 
 @media (min-width: 1600px) {
@@ -510,9 +506,7 @@ li {
   font-weight: 100; }
 
 .career__body--left p {
-  color: #4a4747;
-  font-size: 16px;
-  padding: 40px; }
+  color: #4a4747; }
 
 .career__body--right {
   overflow: hidden;
@@ -577,13 +571,16 @@ li {
 
 /* Contact Section */
 /*mixins*/
-.contact__banner {
+#contact__map {
   position: relative;
   padding: 200px 0;
-  background: url("/vp/wp-content/uploads/2018/01/contact_header.png") no-repeat scroll center center #28281c !important; }
+  /*background: url("/vp/wp-content/uploads/2018/01/contact_header.png") no-repeat scroll center center #28281c !important;*/ }
 
-.contact__banner h1 {
-  color: white; }
+.contact__map--heading {
+  position: absolute;
+  top: 400px;
+  margin: 0 auto;
+  color: #FFF; }
 
 .contact__body--heading {
   padding: 40px 0 0 40px; }
@@ -601,7 +598,7 @@ li {
   -webkit-box-shadow: 0px 0px 100px -20px #4a4747;
   box-shadow: 0px 0px 100px -20px #4a4747;
   width: 100%;
-  top: 300px;
+  top: 500px;
   left: 0;
   right: 0;
   margin: 0 auto; }
@@ -833,6 +830,52 @@ li {
   margin: 0;
   font-size: 14px; }
 
+.blog-footer4 {
+  background-color: #4a4748;
+  padding: 25px 0;
+  margin-top: 1700px; }
+
+.blog-footer4 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.blog-footer4 .container .blog__footer--copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.blog-footer4 .container .blog__footer--copyright img {
+  width: 30%; }
+
+.blog-footer4 .container .nav {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.blog-footer4 .container .nav li {
+  padding: 10px 10px; }
+
+.blog-footer4 .container .nav li a {
+  color: #FFF; }
+
+.blog-footer4 p {
+  margin: 0;
+  font-size: 14px; }
+
 .form-footer {
   background-color: #fff;
   width: 35%;
@@ -893,14 +936,19 @@ li {
 .services__banner {
   position: relative;
   padding: 200px 0;
-  background: url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(#f5a004)), url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), #f5a004), url("/vp/wp-content/uploads/2018/01/career_header.png") no-repeat scroll center center #28281c !important; }
 
 .services__banner h1 {
   color: white; }
 
 .services__body--heading {
-  color: #4a4747;
-  padding: 40px 0 0 40px;
+  padding: 40px 0 30px 40px;
+  background-color: #4a4747;
+  margin: 0; }
+
+.services__body--heading h3 {
+  color: #FFF;
   font-weight: 100 !important; }
 
 .services__body {
@@ -952,6 +1000,138 @@ li {
   color: #4a4747;
   font-size: 16px;
   padding: 0 20px; }
+
+/*mixins*/
+/* portfolio Section */
+.portfolio__banner {
+  position: relative;
+  padding: 200px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(#f5a004)), url("/vp/wp-content/uploads/2018/01/portfolio_header.png") no-repeat scroll center center #28281c !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), #f5a004), url("/vp/wp-content/uploads/2018/01/portfolio_header.png") no-repeat scroll center center #28281c !important; }
+
+.portfolio__banner h1 {
+  color: white; }
+
+.portfolio__body--heading {
+  padding: 40px 0 30px 40px;
+  background: #4a4747;
+  margin: 0; }
+
+.portfolio__body--heading h3 {
+  color: #FFF;
+  font-weight: 100; }
+
+.portfolio__body {
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 100px -20px #4a4747;
+  box-shadow: 0px 0px 100px -20px #4a4747;
+  width: 100%;
+  top: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .portfolio__body {
+    width: 80%; } }
+
+@media (min-width: 1600px) {
+  .portfolio__body {
+    width: 60%; } }
+
+.portfolio__body--left {
+  padding: 0;
+  background-color: #fff; }
+
+@media (min-width: 1024px) {
+  .portfolio__body--left {
+    width: 60%;
+    padding: 50px 50px 0 50px; } }
+
+.portfolio__body--left h3 {
+  color: #4a4747;
+  font-weight: 100; }
+
+.portfolio__body--left p {
+  color: #4a4747; }
+
+.portfolio__body--right {
+  overflow: hidden;
+  width: 100%; }
+
+@media (min-width: 1024px) {
+  .portfolio__body--right {
+    width: 40%; } }
+
+.portfolio__body--right p {
+  color: #4a4747;
+  font-size: 16px; }
+
+.portfolio__body--right h3 {
+  color: #4a4747;
+  font-weight: 100; }
+
+.portfolio__body--right a {
+  font-family: "Roboto", sans-serif; }
+
+.portfolio__container .fa {
+  font-size: 50px;
+  margin: 0 auto;
+  color: #f5a004; }
+
+.portfolio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 50px 0; }
+
+.portfolio__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80px; }
+
+.portfolio__body--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px 0 30px 40px;
+  margin: 0;
+  font-family: "Roboto", sans-serif; }
+
+#portfolio__map {
+  height: 80vh;
+  width: 50%; }
+
+.portfolio__form {
+  width: 50%;
+  padding: 0 50px; }
+
+.portfolio__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0; }
+
+.portfolio__links li {
+  padding: 0 10px; }
 
 /*------------------------------------------------------------------------------*/
 .section-header {
