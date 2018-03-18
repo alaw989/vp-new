@@ -82,9 +82,19 @@
 }
 
 .portfolio__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0;
+    position:relative;
+}
+
+#gallery_bridges, #gallery_misc, #gallery_commercial {
+    display: none;
+}
+
+.portfolio__links li {
+    cursor: pointer;
+    transition: .5s all;
+    &:hover {
+        background-color: $color-accent;
+    }
 }
 
 .portfolio__icon {

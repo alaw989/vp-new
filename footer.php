@@ -50,14 +50,50 @@ wp_nav_menu(array(
     <script src="<?php echo get_template_directory_uri(); ?>/app/js/slick.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function () {
-        $('.subtitle-container').slick({
+      jQuery(document).ready(function () {
+        jQuery('.subtitle-container').slick({
           autoplay: true,
           fade: true,
           arrows: false,
           speed: 700
         });
       });
+
+
+
+      function gallerySwitch() {
+        const e = document.querySelectorAll('.p_links');
+        const f = document.querySelectorAll('.portfolio__gallery');
+        const arr = []
+        const arr2 = []
+        f.forEach((x) => {
+          arr.push(x)
+          arr2.push(x.id)
+        })
+        $(arr).hide();
+        $(arr[0]).show();
+        e.forEach((x) => {
+          x.addEventListener('click', showGallery => {
+            if (x.id) {
+              const joined = 'gallery_' + x.id;
+              const final = arr2.indexOf(joined);
+              $(arr[final]).fadeIn()
+              $(arr).each(function () {
+                if (this.id !== joined) {
+                  $(this).hide();
+                }
+              })
+            }
+          })
+        });
+
+
+
+
+
+      }
+
+      gallerySwitch();
     </script>
 
     </body>

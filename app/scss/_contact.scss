@@ -17,6 +17,9 @@
 
 .contact__body--heading {
   padding: 40px 0 0 40px;
+  background-color: $color-text-dark;
+  color: #ffffff;
+  padding: 40px 0 30px 40px;
 }
 
 .contact__body {
@@ -42,30 +45,29 @@
 .contact__body--left {
   @include desktop {
     width: 60%;
-    padding: 50px 50px 0 50px;
   }
   padding: 0;
   background-color: #fff;
   h3 {
-    color: $color-text-dark;
     font-weight: 100;
   }
 }
 
 .contact__body--right {
+  
   @include desktop {
     width: 40%;
-    padding: 50px 50px 0 50px;
+    
   }
   width: 100%;
-  padding: 0 0 0 20px;
+
   background-color: $color-bg-light;
   p {
     color: $color-text-dark;
     font-size: 16px;
   }
   h3 {
-    color: $color-text-dark;
+    color: #FFF;
     font-weight: 100;
   }
   a {
@@ -74,6 +76,7 @@
 }
 
 .contact__container {
+  padding: 40px 0 30px 40px;
   .fa {
     font-size: 50px;
     margin: 0 auto;
@@ -95,9 +98,12 @@
 
 .contact__body--content {
   display: flex;
-  align-items: center;
+  flex-direction:column;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  h3 {
+    color: $color-text-dark;
+  }
 }
 
 #contact__map {

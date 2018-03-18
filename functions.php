@@ -107,3 +107,22 @@ function vp_theme_setup()
     add_image_size('content_thumb', 450, 450);
     add_image_size('services_page_image_size', 561);
 }
+
+// Our custom post type function
+function create_posttype()
+{
+    register_post_type('gallery',
+  // CPT Options
+      array(
+          'labels' => array(
+              'name' => __('Galleries'),
+              'singular_name' => __('Gallery'),
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'rewrite' => array('slug' => 'gallery'),
+      )
+  );
+}
+// Hooking up our function to theme setup
+add_action('init', 'create_posttype');
