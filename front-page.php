@@ -5,54 +5,26 @@
 
 
 
-<div class="blog-header">
-    <div class="banner-container" style="background-image: url('<?php echo $thumb['0']; ?>'); background-repeat: no-repeat; background-size: cover; ">
-        <div class="title-container">
-            <?php //masthead title widget
-    if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box3')): ?>
-            <?php endif; ?>
 
-            <div class="subtitle-container">
-                <h3>
-                    <span>STRUCTURAL ENGINEERING
-                        <br>AND
-                        <br>STEEL DETAILING</span>
-                </h3>
-                <h3>
-                    <span>BUILDING AND
-                        <br>INFORMATION MODEL (BIM)</span>
-                </h3>
-                <h3>
-                    <span>EMPLOYING THE LATEST
-                        <br>CAD SOFTWARE</span>
-                </h3>
-                <h3>
-                    <span>QUICK RESPONSE</span>
-                </h3>
-            </div>
-        </div>
-    </div>
-</div>
+
+<?php putRevSlider('home_slider', 'homepage'); ?>
+
 
 <section>
     <div class="about-wrap">
         <div class="container">
-            <div class="about-header section-header">
-                <h2>
-                    <span>ABOUT</span> US
-                </h2>
-            </div>
             <div class="about__content">
-                <div class="about__content--image">
-                    <img src="<?php echo $image_attributes[0]; ?>">
+                <div class="about-header section-header">
+                    <h2>
+                        <span>ABOUT</span> US</h2>
                 </div>
                 <div class="about__content--text">
-                    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box4')) : ?>
-                    <?php endif; ?>
+                    <?php echo get_post_field('post_content', $post->ID); ?>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
 
 <section>

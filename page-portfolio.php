@@ -11,7 +11,7 @@
                 <div class="portfolio__body--content">
 
                     <?php
-                $args = array('post_type' => 'gallery');
+                    $args = array('post_type' => 'gallery');
                     $query = new WP_Query($args);
                     ?>
                         <div class="portfolio__links">
@@ -22,7 +22,7 @@
                         $query->the_post(); ?>
                                     <li class="p_links" id="<?php the_title(); ?>">
                                         <?php the_title(); ?>
-                                    </li> 
+                                    </li>
                                     <?php endwhile;
                         else :
                         endif;
@@ -46,25 +46,10 @@
                         wp_reset_postdata();
                         ?>
                         </div>
-
-                        <?php /*  <div class="portfolio__wrapper">
-                            <div class="portfolio__gallery" id="gallery_industrial">
-                                <?php echo do_shortcode('[foogallery id="105"]'); ?>
                 </div>
-                <div class="portfolio__gallery" id="gallery_bridges">
-                    <?php echo do_shortcode('[foogallery id="112"]'); ?>
-                </div>
-                <div class="portfolio__gallery" id="gallery_commercial">
-                    <?php echo do_shortcode('[foogallery id="113"]'); ?>
-                </div>
-                <div class="portfolio__gallery" id="gallery_misc">
-                    <?php echo do_shortcode('[foogallery id="114"]'); ?>
-                </div>
-            </div> --> */ ?>
+            </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 
 <?php get_footer(); ?>

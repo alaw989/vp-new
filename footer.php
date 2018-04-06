@@ -86,14 +86,30 @@ wp_nav_menu(array(
             }
           })
         });
-
-
-
-
-
       }
 
       gallerySwitch();
+
+      jQuery(document).ready(function () {
+
+        function toggleSidebar() {
+          jQuery(".button").toggleClass("active");
+          jQuery("main").toggleClass("move-to-left2");
+          jQuery(".sidebar-item").toggleClass("active");
+          jQuery(".sidebar").toggleClass("move-to-left");
+        }
+
+        jQuery(".button").on("click tap", function () {
+          toggleSidebar();
+        });
+
+        jQuery(document).keyup(function (e) {
+          if (e.keyCode === 27) {
+            toggleSidebar();
+          }
+        });
+
+      });
     </script>
 
     </body>

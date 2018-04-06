@@ -126,3 +126,14 @@ function create_posttype()
 }
 // Hooking up our function to theme setup
 add_action('init', 'create_posttype');
+
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_page(array(
+      'page_title' => 'Theme Options',
+      'menu_title' => 'Theme Options',
+      'menu_slug' => 'theme-options',
+      'icon_url' => 'dashicons-id', // Add this line and replace the second inverted commas with class of the icon you like
+      'capability' => 'edit_posts',
+      'redirect' => false,
+    ));
+}
