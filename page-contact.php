@@ -73,29 +73,34 @@
 
                         <div class="contact__body--content">
                             <h3>Location:</h3>
-                            202 S. 22nd Street Suite 209
-                            <br> Tampa, FL 33605
+                            <p>
+                                <?php the_field('address', 'option'); ?>
+                            </p>
                         </div>
                     </div>
                     <div class="contact__wrapper">
                         <div class="contact__icon">
                             <i class="fa fa-mobile" aria-hidden="true"></i>
                         </div>
-                        
+
                         <div class="contact__body--content">
-                        <h3>Phone:</h3>
-                            (813) 247-3835
-                            <br> Fax: (813) 247-4305
+                            <h3>Phone:</h3>
+                            <p>
+                                <?php the_field('phone_number', 'option'); ?> </br>
+                                Fax:
+                                <?php the_field('fax', 'option'); ?> </p>
                         </div>
                     </div>
                     <div class="contact__wrapper">
                         <div class="contact__icon">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </div>
-                        
+
                         <div class="contact__body--content">
-                        <h3>Email:</h3>
-                            <a href="mailto:vphan@vp-associates.com">vphan@vp-associates.com</a>
+                            <h3>Email:</h3>
+                            <a href="mailto:<?php the_field('email', 'option'); ?>">
+                                <?php the_field('email', 'option'); ?>
+                            </a>
                         </div>
                     </div>
                 </div>

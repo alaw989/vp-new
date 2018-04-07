@@ -94,7 +94,7 @@ wp_nav_menu(array(
 
         function toggleSidebar() {
           jQuery(".button").toggleClass("active");
-          jQuery("main").toggleClass("move-to-left2");
+          jQuery("main").toggleClass("move-to-left2  ");
           jQuery(".sidebar-item").toggleClass("active");
           jQuery(".sidebar").toggleClass("move-to-left");
         }
@@ -110,6 +110,26 @@ wp_nav_menu(array(
         });
 
       });
+
+      const sRow = document.querySelectorAll('.services__row');
+      counter = 0;
+      sRow.forEach((x)=> {
+        counter++; 
+        x.id = counter;
+      
+        if(x.id % 2 == 0) {
+
+
+          var a = x.querySelectorAll('.column_p')
+          var b = x.querySelectorAll('.column_i')
+          console.log(a)
+          console.log(b)
+          jQuery(a).css("order", 1);
+          jQuery(b).css("order", 2);
+    
+        }
+      });
+      
     </script>
 
     </body>

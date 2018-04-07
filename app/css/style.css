@@ -688,7 +688,12 @@ li {
   font-family: "Roboto", sans-serif; }
 
 .contact__body--content h3 {
-  color: #4a4747; }
+  color: #4a4747;
+  font-weight: 400; }
+
+.contact__body--content p, .contact__body--content a {
+  margin: 0;
+  font-weight: 100; }
 
 #contact__map {
   height: 30vh;
@@ -1007,6 +1012,16 @@ li {
   color: #4a4747;
   font-size: 16px;
   padding: 0 20px; }
+
+.column_p {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
+
+.column_i {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
 
 /*mixins*/
 /* portfolio Section */
@@ -1362,8 +1377,8 @@ li {
 
 .about-wrap {
   background-color: #ecebeb;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/vp/wp-content/uploads/2018/01/about.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/vp/wp-content/uploads/2018/01/about.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/vp/wp-content/uploads/2018/01/about.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/vp/wp-content/uploads/2018/01/about.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0; }

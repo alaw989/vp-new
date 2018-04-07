@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<?php $fields = get_fields(17);
-
-$counter = 0; ?>
+<?php $counter = 0; ?>
 
 
 <div class="services">
@@ -15,54 +13,22 @@ $counter = 0; ?>
                         Our Process
                     </h3>
                 </div>
-                <?php /*if ($fields) : */?>
-                <?php /*foreach ($fields as $field) : */?>
-                <?php /* ++$counter; */?>
-                <?php /*if ($counter % 2 == 0) : */?>
+                <?php 
+                    if (have_rows('services')):
+                     while (have_rows('services')) : the_row(); ?>
+                <?php $image = get_sub_field('services_image'); ?>
                 <div class="services__row">
-                    <div class="services__column">
-                        <?php the_field('services_paragraph_1'); ?>
+                    <div class="services__column column_p">
+                        <?php the_sub_field('services_paragraph'); ?>
                     </div>
-                    <div class="services__column">
-                        <img src="<?php the_field('services_image_1'); ?>">
+                    <div class="services__column column_i">
+                        <img src="<?php echo $image['url']; ?>">
                     </div>
                 </div>
-                <?php  /* else : */ ?>
-                <div class="services__row">
-                    <div class="services__column">
-                        <img src="<?php the_field('services_image_2'); ?>">
-                    </div>
-                    <div class="services__column">
-                        <?php the_field('services_paragraph_2'); ?>
-                    </div>
-                </div>
-                <div class="services__row">
-                    <div class="services__column">
-                        <?php the_field('services_paragraph_3'); ?>
-                    </div>
-                    <div class="services__column">
-                        <img src="<?php the_field('services_image_2'); ?>">
-                    </div>
-                </div>
-                <div class="services__row">
-                    <div class="services__column">
-                        <img src="<?php the_field('services_image_2'); ?>">
-                    </div>
-                    <div class="services__column">
-                        <?php the_field('services_paragraph_4'); ?>
-                    </div>
-                </div>
-                <div class="services__row">
-                    <div class="services__column">
-                        <?php the_field('services_paragraph_5'); ?>
-                    </div>
-                    <div class="services__column">
-                        <img src="<?php the_field('services_image_2'); ?>">
-                    </div>
-                </div>
-                <?php /* endif; */ ?>
-                <?php /* endforeach;  */?>
-                <?php /* endif; */?>
+                <?php endwhile;
+                    else :
+                    endif;
+                    ?>
             </div>
         </div>
     </div>

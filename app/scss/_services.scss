@@ -52,7 +52,6 @@
 .services__row {
     display: flex; 
     flex-direction: row;
-
 }
 
 .services__column {
@@ -70,6 +69,12 @@
     }
 }
 
+.column_p {
+  order: 2;
+}
+.column_i {
+  order: 1;
+}
 
 
   
