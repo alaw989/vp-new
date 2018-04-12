@@ -43,6 +43,9 @@
     width: 60%;
     padding: 0px 50px 0 50px;
   }
+  @include tablet-size {
+    padding: 30px;
+  }
   padding: 0;
   background-color: #fff;
   h3 {
@@ -52,11 +55,13 @@
   p {
     color: $color-text-dark;
     font-size: 15px;
+    font-weight: 100;
   }
 }
 
 .career__body--right {
   overflow: hidden;
+  height:500px;
   @include desktop {
     width: 40%;
   }
@@ -99,6 +104,11 @@
   align-items: center;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  @include tablet-size {
+    & {
+      flex-direction: column;
+    }
+  }
 }
 
 #career__map {

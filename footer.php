@@ -13,7 +13,8 @@ if (is_front_page()) {
 ?>
   <div class="container">
     <div class="blog__footer--copyright">
-      <img src="/vp/wp-content/uploads/2017/12/vplogowhite.png" />
+      <?php $logo = get_field('company_logo', 'option'); ?>
+      <img src="<?php echo $logo['url']; ?>" />
       <p>&copy;
         <?php echo date('Y'); ?>
         <?php bloginfo('name'); ?>
@@ -113,23 +114,24 @@ wp_nav_menu(array(
 
       const sRow = document.querySelectorAll('.services__row');
       counter = 0;
-      sRow.forEach((x)=> {
-        counter++; 
+      sRow.forEach((x) => {
+          var a = x.querySelectorAll('.column_p');
+          var b = x.querySelectorAll('.column_i');
+        counter++;
         x.id = counter;
-      
-        if(x.id % 2 == 0) {
-
-
-          var a = x.querySelectorAll('.column_p')
-          var b = x.querySelectorAll('.column_i')
-          console.log(a)
-          console.log(b)
+        if (x.id % 2 == 0) {
           jQuery(a).css("order", 1);
           jQuery(b).css("order", 2);
-    
         }
+        const width = jQuery(window).width();
+      if (width < 1024) {
+        if (x.id % 2 !== 0) {
+          console.log(x)
+          jQuery(a).css("order", 1);
+          jQuery(b).css("order", 2);
+        }
+      }
       });
-      
     </script>
 
     </body>

@@ -34,3 +34,9 @@ $super-width: 1600px;
     @content;
   }
 }
+
+@mixin tablet-size {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}

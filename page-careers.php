@@ -13,19 +13,13 @@
                         <p>
                             <?php echo get_post_field('post_content', $post->ID); ?> </p>
                     </div>
-                    <div class="career__body--right">
-                        <?php 
-                        if (has_post_thumbnail()) {
-                            the_post_thumbnail();
-                        }  ?>
+                   <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
+                    <div class="career__body--right" style="background: url(<?php echo $url; ?>); background-repeat: no-repeat; background-size: cover;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
 
 <?php get_footer(); ?>

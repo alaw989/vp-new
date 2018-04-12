@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<?php $counter = 0; ?>
-
-
 <div class="services">
     <div class="services__banner">
         <div class="container">
