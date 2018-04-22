@@ -4,7 +4,7 @@
     <div class="career__banner">
         <div class="container">
             <h1>CAREERS</h1>
-            <div class="career__body">
+            <div class="career__body contentHeight ">
                 <div class="row career__body--heading">
                     <h3>Join Our Team</h3>
                 </div>

@@ -38,17 +38,43 @@
             </div>
             <div class="services__content">
                 <div class="services-container">
-                    <?php //Home Page Widget Start
+                    <div class="services-subheader">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                        <h3> Areas of Specialization </h3>
+                    </div>
+                    <div class="text-widget">
+                        <?php //Home Page Widget Start
     if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box1')): ?>
-                    <?php endif; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="button-container">
+                        <a href="<?php echo get_permalink(17); ?>">
+                            <button>
+                                <p>Learn More</p>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 <div class="services-container">
-                    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box2')) : ?>
-                    <?php endif; ?>
+                    <div class="services-subheader">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        <h3> Capabilities </h3>
+                    </div>
+                    <div class="text-widget">
+                        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Box2')) : ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="button-container">
+                        <a href="<?php echo get_permalink(17); ?>">
+                            <button>
+                                <p>Learn More</p>
+                            </button>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <a href="<?php echo get_page_link(17); ?>" class="button">LEARN MORE</a>
     </div>
 </section>
 

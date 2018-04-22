@@ -5,41 +5,31 @@
 
     <div class="container">
         <h1 class="contact__map--heading">GET IN TOUCH</h1>
-        <div class="contact__body">
+        <div class="contact__body contentHeight">
             <div class="contact__body--left">
                 <h3 class="contact__body--heading">
                     Send Us A Message
                 </h3>
                 <div id="container" class="ltr">
                     <div class="form-style-2">
-                        <form action="" method="post">
+                    <p>Please fill out the form below and we will contact you shortly.</p>
+                        <form data-bvalidator-validate action="" method="post">
                             <label for="field1">
-                                <span>Name
-                                    <span class="required">*</span>
-                                </span>
-                                <input type="text" class="input-field" name="field1" value="" />
+                                <input type="text" class="input-field" name="field1" value="" placeholder="Name" data-bvalidator="required" />
                             </label>
                             <label for="field2">
-                                <span>Email
-                                    <span class="required">*</span>
-                                </span>
-                                <input type="text" class="input-field" name="field2" value="" />
+                                <input type="text" class="input-field" name="field2" value="" data-bvalidator="required,email" placeholder="Email" />
                             </label>
-                            <label for="field2">
-                                <span>Company
-                                    <span class="required">*</span>
-                                </span>
-                                <input type="text" class="input-field" name="field2" value="" />
+                            <label for="field3">
+                                <input type="text" class="input-field" name="field3" value="" placeholder="Company" data-bvalidator="required" />
                             </label>
                             <label>
-                                <span>Telephone</span>
-                                <input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-
-                                <input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4" />-
-                                <input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10" />
+                                <input type="text" class="input-field" name="field4" value="" maxlength="10" placeholder="Phone" data-bvalidator="required"
+                                />
                             </label>
                             <label for="field4">
-                                <span>I am interested in</span>
                                 <select name="field4" class="select-field">
+                                    <option value="Steel Detailing">I am interested in</option>
                                     <option value="Steel Detailing">Steel Detailing</option>
                                     <option value="Structural Engineering">Structural Engineering</option>
                                     <option value="Connection Design">Connection Design</option>
@@ -47,14 +37,11 @@
                                 </select>
                             </label>
                             <label for="field5">
-                                <span>Message
-                                    <span class="required">*</span>
-                                </span>
-                                <textarea name="field5" class="textarea-field"></textarea>
+                                <textarea name="field5" class="textarea-field" placeholder="Comment"></textarea>
                             </label>
 
                             <label>
-                                <span>&nbsp;</span>
+                               
                                 <input type="submit" value="Submit" />
                             </label>
                         </form>

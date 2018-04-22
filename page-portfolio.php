@@ -4,11 +4,11 @@
     <div class="portfolio__banner">
         <div class="container">
             <h1>OUR WORK</h1>
-            <div class="portfolio__body">
+            <div class="portfolio__body contentHeight">
                 <div class="row portfolio__body--heading">
                     <h3>View Our Portfolio</h3>
                 </div>
-                <div class="portfolio__body--content">
+                <div class="portfolio__body--content ">
 
                     <?php
                     $args = array('post_type' => 'gallery');

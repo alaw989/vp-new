@@ -20,6 +20,7 @@
         wp_register_style('main', get_template_directory_uri().'/app/css/main.css', array(), null, 'all');
         wp_register_style('styles', get_template_directory_uri().'/app/css/style.css', array(), null, 'all');
         wp_register_style('form', get_template_directory_uri().'/app/css/form.css', array(), null, 'all');
+        wp_register_style('bvalidator-theme', get_template_directory_uri().'/app/css/gray.css', array(), null, 'all');
         wp_register_style('vp-style', get_stylesheet_uri(), '', null, 'all');
         wp_enqueue_style('form');
         wp_enqueue_style('bootstrap-grid-min');
@@ -34,6 +35,9 @@
     {
         wp_enqueue_script('wufoo', get_template_directory_uri().'/app/js/wufoo.js');
         wp_enqueue_script('app', get_template_directory_uri().'/app/js/app.js');
+        wp_enqueue_script('bvalidator', get_template_directory_uri().'/app/js/jquery.bvalidator.min.js');
+        wp_enqueue_script('bvalidator-default', get_template_directory_uri().'/app/js/default.min.js');
+        wp_enqueue_script('bvalidator-theme', get_template_directory_uri().'/app/js/gray.js');
     }
 
     add_action('wp_enqueue_scripts', 'enqueue_theme_js');

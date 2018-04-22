@@ -4,7 +4,7 @@
     <div class="services__banner">
         <div class="container">
             <h1>SERVICES</h1>
-            <div class="services__body">
+            <div class="services__body contentHeight">
                 <div class="row services__body--heading">
                     <h3>
                         Our Process
