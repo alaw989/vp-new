@@ -1067,16 +1067,22 @@ li {
 
 .section-header h2 {
   margin: 0px auto;
-  color: #4a4747;
+  color: #FFF;
   font-weight: 100; }
 
 .section-header h2 span {
   font-family: "Roboto Condensed", sans-serif;
   color: #f5a004; }
 
+.section-header h2.color-dark {
+  color: #4a4747; }
+
 .section-header p {
-  color: #4a4747;
-  font-weight: 300; }
+  color: #FFF;
+  font-weight: 100; }
+
+.section-header .align-right {
+  text-align: right; }
 
 /*masthead*/
 .banner-container {
@@ -1091,14 +1097,15 @@ li {
   width: 100%;
   background: url("/vp/wp-content/themes/vp/images/rulerbg.png") no-repeat;
   background-color: #4a4747;
-  padding: 20px 0; }
+  padding: 29px 0 15px 0; }
 
 .upheader-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1117,6 +1124,38 @@ li {
 .upheader-container .logo-container img {
   max-width: 50%; }
 
+.upheader-container .uph-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.upheader-container .uph-wrap-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.upheader-container .uph-wrap-left .upheader-box i {
+  font-size: 20px; }
+
+.upheader-container .uph-wrap-left .upheader-box .box-right .mobile-sidebar-list .mobile-sidebar {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
 .upheader-container .upheader-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1127,15 +1166,19 @@ li {
   flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 0px 5px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .upheader-container .upheader-box i {
   color: #f5a004;
-  font-size: 50px;
+  font-size: 23px;
   padding: 0 10px; }
 
 .upheader-container .upheader-box h2 {
-  color: #f5a004;
+  color: #b8b5b9;
   margin: 0;
   font-weight: 100; }
 
@@ -1147,16 +1190,23 @@ li {
 .upheader-container .upheader-box .box-right p {
   margin: 0;
   color: #b8b5b9;
-  line-height: 25px; }
+  line-height: 25px;
+  font-weight: 100; }
+
+.upheader-container .upheader-box .box-right.flex-help-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (max-width: 1100px) {
   .upheader-container .upheader-box {
     display: none; } }
 
+/*
 .border-right {
   border-right: 2px solid #b8b5b9;
-  padding-right: 60px; }
-
+  padding-right: 30px;
+}*/
 .call-us-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1170,15 +1220,13 @@ li {
   justify-content: flex-end; }
 
 .call-us-container .fa-phone {
-  font-size: 20px !important;
   padding: 0; }
 
 .header-wrap {
   background-color: #ecebeb;
   background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  width: 100%;
-  padding: 10px 0; }
+  width: 100%; }
 
 @media (max-width: 1100px) {
   .header-wrap {
@@ -1188,9 +1236,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1199,6 +1247,14 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.header-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
 
 .header-container .logo-container img {
   max-width: 50%; }
@@ -1223,14 +1279,17 @@ li {
 .nav li a {
   color: #4a4747;
   -webkit-transition: all .5s;
-  transition: all .5s;
-  padding: 5px; }
+  transition: all .5s; }
 
 .nav li a:hover {
   color: #f5a004;
   background-color: #4a4747;
   border-bottom: 3px solid #f5a004; }
 
+.nav .bs-example-navbar-collapse-1 .nav li {
+  padding: 0px; }
+
+.nav-container
 .banner-container {
   height: 60vh;
   position: relative;
@@ -1360,8 +1419,11 @@ li {
   text-align: center; }
 
 .services-wrap .services-header {
-  text-align: left;
-  margin-left: 20px; }
+  text-align: left; }
+
+.services-wrap .services-header p {
+  color: #4a4747;
+  font-weight: 100; }
 
 .services__content {
   display: -webkit-box;
@@ -1371,10 +1433,11 @@ li {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 50px 0; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
 @media (max-width: 768px) {
   .services__content {
@@ -1459,6 +1522,27 @@ li {
 .services__content .button-container button p {
   margin: 0;
   font-weight: 100; }
+
+.services__content .services_feature-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 272px;
+  height: 200px;
+  margin: 0px 20px 20px 0px;
+  border: 1px solid #4a4747; }
+
+.services__content .services_feature-box p {
+  color: #ecebeb;
+  font-weight: 100;
+  margin: 0 auto; }
 
 .services-box h3 {
   padding: 20px 0 0 0;
@@ -1622,10 +1706,19 @@ main {
 
 .mobile-sidebar-list ul li {
   margin: 10px 0;
-  font-size: 20px; }
+  font-size: 20px;
+  padding-left: 40px; }
 
 .mobile-sidebar-list ul li a {
-  color: white; }
+  color: #ecebeb;
+  font-weight: 300;
+  font-family: unset;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.mobile-sidebar-list ul li a:hover {
+  color: #f5a004; }
 
 .mobile-sidebar {
   display: -webkit-box;

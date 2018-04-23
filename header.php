@@ -29,54 +29,32 @@ $logo = get_field('company_logo', 'option');
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo $logo['url']; ?>" /> </a>
                 </div>
-                <div class="upheader-box">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <div class="box-right">
-                        <p>Location</p>
-                        <h4>
-                            <?php the_field('location', 'option'); ?>
-                        </h4>
-                    </div>
-                </div>
-                <div class="upheader-box">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <div class="box-right border-right">
-                        <p>Office Hours</p>
-                        <h4><?php the_field('hours_of_operation', 'option'); ?></h4>
-                    </div>
-                </div>
-                <div class="upheader-box">
-                    <div class="box-right">
-                        <div class="call-us-container">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
+                <div class="uph-wrapper">
+
+                    <div class="upheader-box">
+                        <div class="box-right flex-help-row">
+                            <div class="call-us-container">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:<?php echo $phone_number; ?>">
+                                </a>
+                            </div>
                             <a href="tel:<?php echo $phone_number; ?>">
-                                <p>Call Us</p>
+                                <p>
+                                    <?php  echo $phone_number; ?>
+                                </p>
                             </a>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h4>
+                                <?php the_field('location', 'option'); ?>
+                            </h4>
                         </div>
-                        <a href="tel:<?php echo $phone_number; ?>">
-                            <h2>
-                                <?php  echo $phone_number; ?>
-                            </h2>
-                        </a>
                     </div>
-                </div>
+                    <div class="uph-wrap-left">
+                        <div class="upheader-box">
 
+                            <div class="box-right border-right">
 
-
-                <!-- nav-right -->
-                <main>
-                    <nav>
-                        <div class="button" id="btn">
-                            <div class="bar top"></div>
-                            <div class="bar middle"></div>
-                            <div class="bar bottom"></div>
-                        </div>
-                        <!-- nav-right -->
-                    </nav>
-                </main>
-                <div class="sidebar">
-
-                    <?php
+                                <?php
                             wp_nav_menu(array(
                                 'menu' => 'primary',
                                 'theme_location' => 'primary',
@@ -89,10 +67,54 @@ $logo = get_field('company_logo', 'option');
                                 'walker' => new wp_bootstrap_navwalker(), )
                             );
                             ?>
+                            </div>
+
+                        </div>
+                        <?php /*
+                        <div class="upheader-box">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <div class="box-right border-right">
+                                <h4>
+                                    <?php the_field('hours_of_operation', 'option'); ?>
+                        </h4>
+                    </div>
                 </div>
+                */ ?>
             </div>
         </div>
+
+
+        <!-- nav-right -->
+        <main>
+            <nav>
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+                <!-- nav-right -->
+            </nav>
+        </main>
+        <div class="sidebar">
+
+            <?php
+                            wp_nav_menu(array(
+                                'menu' => 'primary',
+                                'theme_location' => 'primary',
+                                'depth' => 2,
+                                'container' => 'div',
+                                'container_class' => 'mobile-sidebar-list',
+                                'container_id' => '',
+                                'menu_class' => 'mobile-sidebar',
+                                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                                'walker' => new wp_bootstrap_navwalker(), )
+                            );
+                            ?>
+        </div>
     </div>
+    </div>
+    </div>
+    <?php /*
     <div class="header-wrap">
         <div class="container">
             <div class="header-container">
@@ -117,4 +139,5 @@ $logo = get_field('company_logo', 'option');
                 </div>
             </div>
         </div>
+        */ ?>
     </div>

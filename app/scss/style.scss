@@ -15,16 +15,22 @@
   text-align: center;
   h2 {
     margin: 0px auto;
-    color: $color-text-dark;
+    color: #FFF;
     font-weight: 100;
     span {
       font-family: "Roboto Condensed", sans-serif;
       color: $color-accent;
     }
   }
+  h2.color-dark {
+    color: $color-text-dark;
+  }
   p {
-    color: #4a4747;
-    font-weight: 300;
+    color: #FFF;
+    font-weight: 100;
+  }
+  .align-right {
+    text-align: right;
   }
   /*&:before {
     content: '';
@@ -41,7 +47,6 @@
 
 .banner-container {
   position: relative;
-
 }
 
 .container {
@@ -54,12 +59,12 @@
   width: 100%;
   background: url('/vp/wp-content/themes/vp/images/rulerbg.png') no-repeat;
   background-color: #4a4747;
-  padding: 20px 0;
+  padding: 29px 0 15px 0;
 }
 
 .upheader-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 100%;
   align-items: center;
@@ -71,17 +76,41 @@
       max-width: 50%;
     }
   }
+  .uph-wrapper {
+    display: flex;
+    flex-grow: 3;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .uph-wrap-left {
+    display: flex;
+    justify-content: flex-end;
+    .upheader-box {
+      i {
+        font-size: 20px;
+      }
+      .box-right {
+        .mobile-sidebar-list {
+          .mobile-sidebar {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
   .upheader-box {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0px 5px;
+    justify-content: flex-end;
     i {
-      color: #f5a004;
-      font-size: 50px;
+      color: $color-accent;
+      font-size: 23px;
       padding: 0 10px;
     }
     h2 {
-      color: #f5a004;
+      color: #b8b5b9;
       margin: 0;
       font-weight: 100;
     }
@@ -95,6 +124,10 @@
         margin: 0;
         color: #b8b5b9;
         line-height: 25px;
+        font-weight: 100;
+      }
+      &.flex-help-row {
+        display: flex;
       }
     }
     @media (max-width: 1100px) {
@@ -103,17 +136,17 @@
   }
 }
 
+/*
 .border-right {
   border-right: 2px solid #b8b5b9;
-  padding-right: 60px;
-}
+  padding-right: 30px;
+}*/
 
 .call-us-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   .fa-phone {
-    font-size: 20px !important;
     padding: 0;
   }
 }
@@ -123,7 +156,6 @@
   background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   width: 100%;
-  padding: 10px 0;
   @media (max-width: 1100px) {
     display: none;
   }
@@ -131,11 +163,13 @@
 
 .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   width: 100%;
   align-items: center;
   .logo-container {
+    display: flex;
+    flex-grow: 1;
     img {
       max-width: 50%;
     }
@@ -153,7 +187,6 @@
     a {
       color: $color-text-dark;
       transition: all .5s;
-      padding: 5px;
       &:hover {
         color: $color-accent;
         background-color: $color-text-dark;
@@ -161,7 +194,14 @@
       }
     }
   }
+  .bs-example-navbar-collapse-1 {
+    .nav li {
+      padding: 0px;
+    }
+  }
 }
+
+.nav-container
 
 .banner-container {
   height: 60vh;
@@ -198,7 +238,6 @@
   }
 }
 
-
 .about-title {
   margin: 0;
   padding: 20px 0;
@@ -229,12 +268,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
- @media (max-width: 1024px) {
-  padding-right: 100px;
- }
+  @media (max-width: 1024px) {
+    padding-right: 100px;
+  }
   @include tablet {
     align-items: flex-end;
-    
   }
 }
 
@@ -260,7 +298,6 @@
     color: $color-bg-light;
     text-align: right;
     font-weight: 100;
-    
   }
   hr {
     height: 12px;
@@ -282,15 +319,19 @@
   text-align: center;
   .services-header {
     text-align: left;
-    margin-left: 20px;
+    p {
+      color: $color-text-dark;
+      font-weight: 100;
+    }
   }
 }
 
 .services__content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 50px 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -307,7 +348,6 @@
     255,
     0.5);
     padding: 0px 0px 20px 0px;
-    
     margin: 0px 20px;
     width: 100%;
     .text-widget {
@@ -357,7 +397,20 @@
       }
     }
   }
-
+  .services_feature-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 272px;
+    height: 200px;
+    margin: 0px 20px 20px 0px;
+    border: 1px solid $color-text-dark;
+    p {
+      color: $color-bg-light;
+      font-weight: 100;
+      margin: 0 auto;
+    }
+  }
 }
 
 .services-box {
@@ -368,7 +421,6 @@
   }
   i {
     font-size: 80px;
-
   }
   .textwidget {
     text-align: left;
@@ -553,12 +605,19 @@ main {
   display: flex;
   justify-content: center;
   ul {
-    
     li {
       margin: 10px 0;
       font-size: 20px;
+      padding-left: 40px;
       a {
-        color: white;
+        color: $color-bg-light;
+        font-weight: 300;
+        font-family: unset;
+        cursor: pointer;
+        transition: .5s;
+        &:hover {
+          color: $color-accent;
+        }
       }
     }
   }
@@ -699,4 +758,3 @@ main {
     display: none;
   }
 }
-
