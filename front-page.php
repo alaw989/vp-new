@@ -43,7 +43,7 @@
 
                 <?php $image = get_sub_field('specialization_background'); ?>
 
-                <div class="services_feature-box" style="background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(<?php echo $image['url']; ?>);">
+                <div class="services_feature-box" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo $image['url']; ?>);">
                     <p><?php the_sub_field('specialization_text'); ?></p>  
                 </div>
 

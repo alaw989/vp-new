@@ -41,7 +41,7 @@
 .career__body--left {
   @include desktop {
     width: 60%;
-    padding: 0px 50px 0 50px;
+    padding: 50px 50px 75px 50px;
   }
   @include tablet-size {
     padding: 30px;

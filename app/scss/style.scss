@@ -58,7 +58,7 @@
 .upheader-wrap {
   width: 100%;
   background: url('/vp/wp-content/themes/vp/images/rulerbg.png') no-repeat;
-  background-color: #4a4747;
+  background-color: #232323;
   padding: 29px 0 15px 0;
 }
 
@@ -67,7 +67,7 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  align-items: center;
+  
   @media (max-width: 1100px) {
     justify-content: space-between;
   }
@@ -79,7 +79,7 @@
   .uph-wrapper {
     display: flex;
     flex-grow: 3;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: column;
   }
   .uph-wrap-left {
@@ -106,13 +106,9 @@
     justify-content: flex-end;
     i {
       color: $color-accent;
-      font-size: 23px;
-      padding: 0 10px;
-    }
-    h2 {
-      color: #b8b5b9;
-      margin: 0;
-      font-weight: 100;
+      font-size: 20px;
+      padding-right: 5px;
+      padding-left: 15px;
     }
     .box-right {
       h4 {
@@ -125,6 +121,8 @@
         color: #b8b5b9;
         line-height: 25px;
         font-weight: 100;
+        font-size: 16px;
+        
       }
       &.flex-help-row {
         display: flex;
@@ -146,6 +144,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   .fa-phone {
     padding: 0;
   }
@@ -270,6 +269,7 @@
   align-items: flex-end;
   @media (max-width: 1024px) {
     padding-right: 100px;
+    align-items: center;
   }
   @include tablet {
     align-items: flex-end;
@@ -606,7 +606,7 @@ main {
   justify-content: center;
   ul {
     li {
-      margin: 10px 0;
+      margin: 0;
       font-size: 20px;
       padding-left: 40px;
       a {

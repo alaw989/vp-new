@@ -10,7 +10,7 @@
 
 .contact__map--heading {
   position: absolute;
-  top: 400px;
+  top: 320px;
   margin: 0 auto;
   color: #FFF;
 }
@@ -23,29 +23,25 @@
 }
 
 .contact__body {
-  @include tablet {
-    flex-direction: row;
-    width: 80%;
-  }
-  @include super {
-    width: 60%;
-  }
-  display: flex;
+  width: 80%;
+@media (max-width: 1024px) {
   flex-direction: column;
+  width: 100%;
+}
+
+  display: flex;
+  flex-direction: row;;
   position: absolute;
   background-color: #fff;
   box-shadow: 0px 0px 100px -20px $color-text-dark;
-  width: 100%;
-  top: 500px;
+  top: 420px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 
 .contact__body--left {
-  @include desktop {
-    width: 60%;
-  }
+  width: 60%;
   padding: 0;
   background-color: #fff;
   h3 {
@@ -55,16 +51,13 @@
     color: $color-text-dark;
     font-weight: 100;
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .contact__body--right {
-  
-  @include desktop {
-    width: 40%;
-    
-  }
-  width: 100%;
-
+  width: 40%;
   background-color: $color-bg-light;
   p {
     color: $color-text-dark;
@@ -76,6 +69,9 @@
   }
   a {
     font-family: "Roboto", sans-serif;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 }
 
@@ -98,6 +94,8 @@
   display: flex;
   align-items: center;
   width: 80px;
+  border-right: 4px solid #cacaca;
+  margin-right: 12px;
 }
 
 .contact__body--content {

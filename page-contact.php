@@ -2,7 +2,6 @@
 
 <div class="contact">
     <div id="contact__map"></div>
-
     <div class="container">
         <h1 class="contact__map--heading">GET IN TOUCH</h1>
         <div class="contact__body contentHeight">

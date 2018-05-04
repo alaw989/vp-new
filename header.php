@@ -44,9 +44,9 @@ $logo = get_field('company_logo', 'option');
                                 </p>
                             </a>
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <h4>
+                            <p>
                                 <?php the_field('location', 'option'); ?>
-                            </h4>
+                            </p>
                         </div>
                     </div>
                     <div class="uph-wrap-left">
@@ -135,9 +135,9 @@ $logo = get_field('company_logo', 'option');
                                 'walker' => new wp_bootstrap_navwalker(), )
                             );
                             ?>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        */ ?>
+    </nav>
+    </div>
+    </div>
+    </div>
+    */ ?>
     </div>

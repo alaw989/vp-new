@@ -10,22 +10,23 @@
                         Our Process
                     </h3>
                 </div>
-                <?php 
+                <?php /*
                     if (have_rows('services')):
-                     while (have_rows('services')) : the_row(); ?>
-                <?php $image = get_sub_field('services_image'); ?>
-                <div class="services__row">
-                    <div class="services__column column_p">
-                        <?php the_sub_field('services_paragraph'); ?>
+                     while (have_rows('services')) : the_row(); */?>
+                <?php /* $image = get_sub_field('services_image'); */?> 
+                <div class="career__body--content">
+                    <div class="career__body--left">
+                        <p>
+                            <?php echo get_post_field('post_content', $post->ID); ?> </p>
                     </div>
-                    <div class="services__column column_i">
-                        <img src="<?php echo $image['url']; ?>">
+                   <?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
+                    <div class="career__body--right" style="background: url(<?php echo $url; ?>); background-repeat: no-repeat; background-size: cover;">
                     </div>
                 </div>
-                <?php endwhile;
+                <?php /* endwhile;
                     else :
                     endif;
-                    ?>
+                   */ ?>
             </div>
         </div>
     </div>

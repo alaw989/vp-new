@@ -122,6 +122,10 @@ wp_nav_menu(array(
   });
 
     jQuery('.blog-footer').css('margin-top', $('.contentHeight').height());
+
+
+
+    
     
   });
 </script>
